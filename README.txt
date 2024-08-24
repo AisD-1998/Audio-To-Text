@@ -17,36 +17,14 @@ This is a simple desktop application that transcribes audio files into text. The
 ### macOS
 - macOS 10.12 (Sierra) or later
 
+### Python Packages
+
+- pydub
+- python-docx
+- SpeechRecognition
+- PyInstaller (for building the executable)
+
 ## Installation
-
-### Download the App
-
-You can download the latest version of the app from the [Releases](https://github.com/yourusername/your-repo/releases) page.
-
-### Windows
-
-1. Download the `script.exe` file from the [Releases](https://github.com/yourusername/your-repo/releases) page.
-2. Run the executable file by double-clicking it.
-
-### macOS
-
-1. Download the `script` file from the [Releases](https://github.com/yourusername/your-repo/releases) page.
-2. Open Terminal and navigate to the directory where the `script` file is located.
-3. Run the following command to make the file executable:
-
-   ```sh
-   chmod +x script
-   ```
-
-4. You can then run the app by double-clicking the file or by running the following command in Terminal:
-
-   ```sh
-   ./script
-   ```
-
-## Building the App
-
-If you want to build the app from source, follow these instructions.
 
 ### Prerequisites
 
@@ -59,8 +37,8 @@ If you want to build the app from source, follow these instructions.
 1. Clone this repository:
 
    ```sh
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
+   git clone https://github.com/AisD-1998/Audio-To-Text.git
+   cd Audio-To-Text
    ```
 
 2. Install the required Python packages:
@@ -68,6 +46,11 @@ If you want to build the app from source, follow these instructions.
    ```sh
    pip install -r requirements.txt
    ```
+
+3. Download the appropriate `ffmpeg` binaries for your platform:
+   
+   - For Windows, download `ffmpeg.exe` and `ffprobe.exe` and place them in `ffmpeg/windows/`.
+   - For macOS, download the `ffmpeg` and `ffprobe` binaries and place them in `ffmpeg/macos/`.
 
 ### Building on Windows
 

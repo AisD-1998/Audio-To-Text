@@ -1,0 +1,5 @@
+pydub
+python-docx
+SpeechRecognition
+tkinter
+PyInstaller
